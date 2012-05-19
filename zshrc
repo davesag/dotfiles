@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="josh"
 plugins=(rails git textmate ruby lighthouse osx bundler brew cake heroku node npm rails3 rvm terminalapp cap nyan)
 
-export unsetopt=correct_all
+unsetopt correct_all
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
 
@@ -55,14 +55,6 @@ export EDITOR="$HOME/bin/mate -w"
 # ========================================================================
 export TM_GIT=/usr/local/git/bin/git
 
-# ========================================================================
-# Ruby Version Manager
-# ========================================================================
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# export HBASE_HOME=/usr/local/Cellar/hbase/0.90.5/libexec
-
-
 source ~/.aliases
 
 # These are private project aliases we don't want to give to other people.
@@ -79,3 +71,6 @@ fi
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH=`npm bin`:$PATH
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+PATH=$HOME/.rvm/bin:$PATH
+rvm use 1.9.3-p125 --default
