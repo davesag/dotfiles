@@ -9,7 +9,7 @@ set ruler
 set incsearch
 
 set backspace=indent,eol,start
-set mouse=a
+set mouse=
 set whichwrap=b,s,h,l,<,>,~,[,]
 set wildmenu
 set showcmd
