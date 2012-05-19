@@ -31,32 +31,6 @@
 [core]
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
-[mergetool "p4merge"]
-	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
-	
-[diff]
-	external = p4diff
-	summary = true
-
-[difftool "p4diff"]
-
-# [merge]
-# 	keepBackup = false;
-# 	tool = sourcetree
-# 	log = true
-# 
-# [diff]
-# 	external = sourcetree
-# 	summary = true
-
-# [mergetool "sourcetree"]
-# 	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-# 	trustExitCode = true
-
-
 [core]
 	excludesfile = ~/.gitignore_global
 	
