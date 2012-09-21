@@ -39,16 +39,27 @@ export PATH=$PATH:/Developer/usr/bin
 # ========================================================================
 # Java
 # ========================================================================
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_07.jdk/Contents/Home
 export CATALINA_HOME=/Library/Tomcat
 export TOMCAT_HOME=${CATALINA_HOME}
 
 # ========================================================================
 # Editors
 # ========================================================================
-export SVN_EDITOR='mate -w'
-export GIT_EDITOR="~/bin/mate -w"
-export EDITOR="$HOME/bin/mate -w"
+export SVN_EDITOR='~/bin/subl -w'
+export GIT_EDITOR="~/bin/subl -w"
+export EDITOR="~/bin/subl -w"
+
+# ========================================================================
+# JRuby
+# ========================================================================
+export JRUBY_HOME='/Users/djp/.rvm/rubies/jruby-1.6.7.2'
+
+# ========================================================================
+# Vert.x
+# ========================================================================
+export PATH=~/development/vert.x/bin:$PATH
+export VERTX_HOME=/Users/djp/development/vert.x/
 
 # ========================================================================
 # TextMate variables
@@ -67,10 +78,13 @@ if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
 
+export PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
+
+
 # Node package manager
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH=`npm bin`:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$HOME/.rvm/bin:$PATH
-rvm use 1.9.3-p125 --default
+rvm use 1.9.3-p194 --default
