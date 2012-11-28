@@ -3,11 +3,11 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="josh"
 plugins=(rails git textmate ruby lighthouse osx bundler brew cake heroku node npm rails3 rvm terminalapp cap nyan)
 
-unsetopt correct_all
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # ========================================================================
 # Paths
