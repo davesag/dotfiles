@@ -31,3 +31,6 @@ alias gpom='git push origin master'
 alias gout='git log origin/master..master'
 alias gin='git log master..origin/master'
 
+alias rake='spring rake'
+
+alias l='ls -xal'
