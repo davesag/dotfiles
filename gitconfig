@@ -61,3 +61,5 @@
 	insteadOf = "gist:"
 [mergetool]
 	keepBackup = false
+[push]
+	default = simple
