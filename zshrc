@@ -9,7 +9,6 @@ export LC_CTYPE=en_US.UTF-8
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-
 # ========================================================================
 # Paths
 # ========================================================================
@@ -25,17 +24,6 @@ export SVN_EDITOR='/Users/davidp/bin/subl -w'
 export GIT_EDITOR="/Users/davidp/bin/subl -w"
 export EDITOR="/Users/davidp/bin/subl -w"
 
-# ========================================================================
-# Vert.x
-# ========================================================================
-export PATH=~/development/vert.x/bin:$PATH
-export VERTX_HOME=~/development/vert.x/
-
-# ========================================================================
-# TextMate variables
-# ========================================================================
-export TM_GIT=/usr/local/git/bin/git
-
 source ~/.aliases
 
 # These are private project aliases we don't want to give to other people.
@@ -47,13 +35,6 @@ fi
 if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
-
-export PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
-
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$HOME/.rvm/bin:$PATH
-rvm use ruby-1.9.3-p392 --default
 
 export PATH=/usr/local/bin:$PATH
 
@@ -73,9 +54,9 @@ export PATH=`npm bin`:$PATH
 
 export PATH=~/bin:$PATH
 
-export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 export DB_USER_NAME=postgres
 export DB_PWD=
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
