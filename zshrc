@@ -77,3 +77,5 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 export DB_USER_NAME=postgres
 export DB_PWD=
+
+PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
