@@ -60,3 +60,4 @@ export DB_PWD=
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+rvm use ruby-2.0.0 --default
