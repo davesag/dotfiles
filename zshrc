@@ -9,20 +9,14 @@ export LC_CTYPE=en_US.UTF-8
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-# ========================================================================
-# Paths
-# ========================================================================
-# Add my bin directory to the PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/mysql/bin:$PATH
-export PATH=/usr/local/var/postgres:$PATH
+export LD_LIBRARY_PATH=/usr/local/pgsql/lib
 
 # ========================================================================
 # Editors
 # ========================================================================
-export SVN_EDITOR='/Users/davidp/bin/subl -w'
-export GIT_EDITOR="/Users/davidp/bin/subl -w"
-export EDITOR="/Users/davidp/bin/subl -w"
+export SVN_EDITOR='/Users/djp/bin/subl -w'
+export GIT_EDITOR="/Users/djp/bin/subl -w"
+export EDITOR="/Users/djp/bin/subl -w"
 
 source ~/.aliases
 
@@ -36,28 +30,12 @@ if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
 
-export PATH=/usr/local/bin:$PATH
+### Node Package manager
+export PATH=$PATH:`npm bin`
+
+### My local binaries
+export PATH=$PATH:~/bin
 
 cd ~/development
 
-# ========================================================================
-# Java
-# ========================================================================
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_12.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
-
-export JRUBY_HOME=$HOME/.rvm/rubies/jruby-1.7.2
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=`npm bin`:$PATH
-
-export PATH=~/bin:$PATH
-
-
-export DB_USER_NAME=postgres
-export DB_PWD=
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-rvm use ruby-2.0.0 --default
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
