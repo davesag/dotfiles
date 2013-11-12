@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 export ZSH_THEME="josh"
-plugins=(rails git textmate ruby lighthouse osx bundler brew cake heroku node npm rails3 rvm terminalapp cap nyan)
+plugins=(rails git textmate ruby lighthouse osx brew cake heroku node npm rails3 rvm terminalapp cap nyan)
 
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
@@ -30,8 +30,11 @@ if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
 
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+
 ### Node Package manager
-export PATH=$PATH:`npm bin`
+export PATH=`npm bin`:$PATH
 
 ### My local binaries
 export PATH=$PATH:~/bin
