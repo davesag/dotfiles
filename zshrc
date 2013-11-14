@@ -1,7 +1,13 @@
 export ZSH=$HOME/.oh-my-zsh
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 export ZSH_THEME="josh"
-plugins=(rails git textmate ruby lighthouse osx brew cake heroku node npm rails3 rvm terminalapp cap nyan)
+plugins=(rails git textmate ruby lighthouse osx brew cake bundler heroku node npm rails3 rvm terminalapp cap nyan)
 
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
@@ -41,4 +47,3 @@ export PATH=$PATH:~/bin
 
 cd ~/development
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
