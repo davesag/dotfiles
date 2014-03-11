@@ -1,11 +1,3 @@
-[user]
-	name = David Parry
-	email = david.parry@suranyami.com
-
-[github]
-	user = suranyami
-	token = 94939d326abf23d9649b09e13cf6f36a
-
 [color]
 	ui = auto
 	status = auto

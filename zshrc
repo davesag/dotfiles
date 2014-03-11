@@ -20,9 +20,9 @@ export LD_LIBRARY_PATH=/usr/local/pgsql/lib
 # ========================================================================
 # Editors
 # ========================================================================
-export SVN_EDITOR='/Users/djp/bin/subl -w'
-export GIT_EDITOR="/Users/djp/bin/subl -w"
-export EDITOR="/Users/djp/bin/subl -w"
+export SVN_EDITOR='~/bin/subl -w'
+export GIT_EDITOR="~/bin/subl -w"
+export EDITOR="~/bin/subl -w"
 
 source ~/.aliases
 
@@ -45,5 +45,5 @@ export PATH=`npm bin`:$PATH
 ### My local binaries
 export PATH=$PATH:~/bin
 
-cd ~/development
+cd ~/src
 
